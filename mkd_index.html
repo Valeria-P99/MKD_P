@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Многоквартирные дома Перми</title>
+    <link rel="stylesheet" href="./mkd_style.css">
+    <script src="https://cdn.jsdelivr.net/npm/ol@v10.3.1/dist/ol.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v10.3.1/ol.css">
+
+</head>
+<body>
+    <header>Многоквартирные дома города Перми</header>
+    <div class="container">
+    <aside class="sidebar">
+        <h3>Легенда</h3>
+        <ul class="legend">
+            <li><input type="checkbox" id="osmLayer" checked>Карта OSM</li>
+            <li><input type="checkbox" id="MkdLayer" checked>МКД</li>
+            <li><input type="checkbox" id="DistricLayer" checked>Границы районов</li>
+        </ul>
+    </aside>
+    <main id="map" class="map"></main>
+<aside class="atr-panel">
+    <h3>Атрибуты объекта</h3>
+    <div id="attributesContent">Выберите объект на карте для просмотра атрибутов</div>
+</aside>
+</div>
+<footer>
+    <p>Итоговый проект по Web-картографированию</p>
+</footer>
+<script src="./mkd_main.js"></script>
+<script src="./atribute.js"></script>
+</body>
+</html>
